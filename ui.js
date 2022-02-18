@@ -5,7 +5,7 @@ const ui = {
     onGameConnected(data){
         console.log("Connected to Beat Saber v" + data.game.gameVersion);
         if(showGrid == "0"){
-            document.getElementsByTagName("Grid")[0].remove();
+            document.querySelector(".Grid").remove();
         }
     },
     noteCut(data, fullStatus){
